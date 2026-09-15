@@ -9,7 +9,7 @@ const mostrarAlunos = (req, res) => {
 
 const calcularMedia = (req, res) => {
     alunos.forEach( n => {
-        n.media = (n.nota1 + n.nota2 + n.nota3)/3
+        n.media = (parseFloat(n.nota1) + parseFloatn(n.nota2) + parseFloat(n.nota3))/3
     })
 }
 
